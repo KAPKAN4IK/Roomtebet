@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Румтибет</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header id="header" class="header">
+    <div class="header__top">
+        <div class="header__top-container container">
+            <a href="#!" class="header__logo logo"><img src="img/icons/logo.svg" alt="РУМТИБЕТ" class="logo__image"></a>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="#header" class="navigation__link scroll-link">
+                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none"><path d="M5.72 4.61 1.27.16A.54.54 0 0 0 .87 0 .54.54 0 0 0 .5.16L.16.49a.55.55 0 0 0 0 .77L3.9 5 .16 8.74a.55.55 0 0 0 0 .77l.33.33a.54.54 0 0 0 .77 0l4.46-4.45c.1-.1.16-.25.15-.4a.54.54 0 0 0-.15-.38Z" fill="#F2BE22"/></svg>
+                            <span>Главная</span>
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#campaign" class="navigation__link scroll-link">
+                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none"><path d="M5.72 4.61 1.27.16A.54.54 0 0 0 .87 0 .54.54 0 0 0 .5.16L.16.49a.55.55 0 0 0 0 .77L3.9 5 .16 8.74a.55.55 0 0 0 0 .77l.33.33a.54.54 0 0 0 .77 0l4.46-4.45c.1-.1.16-.25.15-.4a.54.54 0 0 0-.15-.38Z" fill="#F2BE22"/></svg>
+                            <span>О нас</span>
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#offer" class="navigation__link scroll-link">
+                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none"><path d="M5.72 4.61 1.27.16A.54.54 0 0 0 .87 0 .54.54 0 0 0 .5.16L.16.49a.55.55 0 0 0 0 .77L3.9 5 .16 8.74a.55.55 0 0 0 0 .77l.33.33a.54.54 0 0 0 .77 0l4.46-4.45c.1-.1.16-.25.15-.4a.54.54 0 0 0-.15-.38Z" fill="#F2BE22"/></svg>
+                            <span>Стоимость</span>
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#tour" class="navigation__link scroll-link">
+                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none"><path d="M5.72 4.61 1.27.16A.54.54 0 0 0 .87 0 .54.54 0 0 0 .5.16L.16.49a.55.55 0 0 0 0 .77L3.9 5 .16 8.74a.55.55 0 0 0 0 .77l.33.33a.54.54 0 0 0 .77 0l4.46-4.45c.1-.1.16-.25.15-.4a.54.54 0 0 0-.15-.38Z" fill="#F2BE22"/></svg>
+                            <span>Направления</span>
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#blog" class="navigation__link scroll-link">
+                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none"><path d="M5.72 4.61 1.27.16A.54.54 0 0 0 .87 0 .54.54 0 0 0 .5.16L.16.49a.55.55 0 0 0 0 .77L3.9 5 .16 8.74a.55.55 0 0 0 0 .77l.33.33a.54.54 0 0 0 .77 0l4.46-4.45c.1-.1.16-.25.15-.4a.54.54 0 0 0-.15-.38Z" fill="#F2BE22"/></svg>
+                            <span>Блог</span>
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#gallery" class="navigation__link scroll-link">
+                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none"><path d="M5.72 4.61 1.27.16A.54.54 0 0 0 .87 0 .54.54 0 0 0 .5.16L.16.49a.55.55 0 0 0 0 .77L3.9 5 .16 8.74a.55.55 0 0 0 0 .77l.33.33a.54.54 0 0 0 .77 0l4.46-4.45c.1-.1.16-.25.15-.4a.54.54 0 0 0-.15-.38Z" fill="#F2BE22"/></svg>
+                            <span>Галерея</span>
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#footer" class="navigation__link scroll-link">
+                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none"><path d="M5.72 4.61 1.27.16A.54.54 0 0 0 .87 0 .54.54 0 0 0 .5.16L.16.49a.55.55 0 0 0 0 .77L3.9 5 .16 8.74a.55.55 0 0 0 0 .77l.33.33a.54.54 0 0 0 .77 0l4.46-4.45c.1-.1.16-.25.15-.4a.54.54 0 0 0-.15-.38Z" fill="#F2BE22"/></svg>
+                            <span>Контакты</span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="navigation__consultation btn btn--small" type="button"><span class="underline">Консультация</span></button>
+            </nav>
+            <button class="header__burger" aria-label="Открыть меню" type="button"> 
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+    <div class="header__content">
+        <div class="header__content-container container">
+            <h1 class="header__title">Насладись прогулкой в горах <br> с командой единомышленников</h1>
+            <form action="#" class="header__form">
+                <div class="header__dropDawn dropDawn">
+                    <button class="dropDawn__btn" aria-controls="dropDawn-location">Локация для тура</button>
+                    <div class="dropDawn__body dropDawn__body--openDawn" id="dropDawn-location">
+                        <ul class="dropDawn__list">
+                            <li class="dropDawn__item"><button class="dropDawn__select-item" type="button" onclick="dropDawnSelect()" data-value="karpati">Карпаты</button></li>
+                            <li class="dropDawn__item"><button class="dropDawn__select-item" type="button" onclick="dropDawnSelect()" data-value="latorica">Латориця</button></li>
+                            <li class="dropDawn__item"><button class="dropDawn__select-item" type="button" onclick="dropDawnSelect()" data-value="goverla">Говерла</button></li>
+                            <li class="dropDawn__item"><button class="dropDawn__select-item" type="button" onclick="dropDawnSelect()" data-value="odesaBich">Одеський пляж</button></li>
+                            <li class="dropDawn__item"><button class="dropDawn__select-item" type="button" onclick="dropDawnSelect()" data-value="krumBich">Кримський пляж</button></li>
+                        </ul>
+                    </div>
+                    <input class="dropDawn__hidden-input" name="location" type="text" value="">
+                    <div class="dropDawn__subtitle">выберите из списка</div>
+                </div>
+                <div class="header__dropDawn dropDawn">
+                    <button class="dropDawn__btn" aria-controls="dropDawn-date">Дата похода</button>
+                    <!-- dropDawn body -->
+                    <div class="dropDawn__body" id="dropDawn-date">
+                        <label class="dropDawn__label">
+                            <span class="dropDawn__infotext">Дата начала</span>
+                            <input type="date" class="dropDawn__input">
+                        </label>
+                        <label class="dropDawn__label">
+                            <span class="dropDawn__infotext">Количество дней</span>
+                            <input type="number" class="dropDawn__input">
+                        </label>
+                    </div>
+                    <input class="dropDawn__hidden-input" name="date" type="text" value="">
+                    <div class="dropDawn__subtitle">укажите диапазон</div>
+                </div>
+                <div class="header__dropDawn dropDawn">
+                    <button class="dropDawn__btn" aria-controls="dropDawn-countPeople">Участники</button>
+                    <div class="dropDawn__body" id="dropDawn-countPeople">
+                        <ul class="dropDawn__list">
+                            <li class="dropDawn__item"><button class="dropDawn__select-item" type="button" onclick="dropDawnSelect()" data-value="4">4</button></li>
+                            <li class="dropDawn__item"><button class="dropDawn__select-item" type="button" onclick="dropDawnSelect()" data-value="5">5</button></li>
+                            <li class="dropDawn__item"><button class="dropDawn__select-item" type="button" onclick="dropDawnSelect()" data-value="6">6</button></li>
+                            <li class="dropDawn__item"><button class="dropDawn__select-item" type="button" onclick="dropDawnSelect()" data-value="7">7</button></li>
+                            <li class="dropDawn__item"><button class="dropDawn__select-item" type="button" onclick="dropDawnSelect()" data-value="8">8</button></li>
+                            <li class="dropDawn__item"><button class="dropDawn__select-item" type="button" onclick="dropDawnSelect()" data-value="9">9</button></li>
+                            <li class="dropDawn__item"><button class="dropDawn__select-item" type="button" onclick="dropDawnSelect()" data-value="10">10</button></li>
+                            <li class="dropDawn__item"><button class="dropDawn__select-item" type="button" onclick="dropDawnSelect()" data-value="11">11</button></li>
+                            <li class="dropDawn__item"><button class="dropDawn__select-item" type="button" onclick="dropDawnSelect()" data-value="12">12</button></li>
+                        </ul>
+                    </div>
+                    <input class="dropDawn__hidden-input" name="countPeople" type="text" value="">
+                    <div class="dropDawn__subtitle">минимум 4 человека</div>
+                </div>
+                <button class="header__form-btn btn btn--white" type="submit"><span class="underline">Найти программу</span></button>
+            </form>
+            <button class="header__form-openBtn btn btn--white"><span class="underline">Найти программу</span></button>
+        </div>
+    </div>
+</header>
+        <main id="main">
+            <section class="campaign" id="campaign">
+    <div class="campaign__container container">
+        <div class="campaign__left">
+            <div class="campaign__img-block">
+                <picture class="campaign__img">
+                    <source srcset="img/campaign/image1.avif" type="image/avif">
+                    <source srcset="img/campaign/image1.webp" type="image/webp">
+                    <img src="img/campaign/image1.jpg" loading="lazy"alt="mountain">
+                </picture>
+            </div>
+            <div class="campaign__img-block">
+                <button class="campaign__video-btn">
+                    <picture class="campaign__img">
+                        <source srcset="img/campaign/image2.avif" type="image/avif">
+                        <source srcset="img/campaign/image2.webp" type="image/webp">
+                        <img src="img/campaign/image2.jpg" loading="lazy"alt="mountain">
+                    </picture>
+                </button>
+            </div>
+        </div>
+        <div class="campaign__right">
+            <div class="campaign__subtitle subtitle">о нашем походе</div>
+            <h2 class="campaign__title title">Исследуйте все горные массивы мира вместе с нами</h2>
+            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Бросил заглавных пояс решила всемогущая! Рот скатился прямо деревни журчит агентство! Всемогущая большой предложения, однажды текстами путь имеет запятых жаренные!</p>
+            <a href="#" class="campaign__btn btn"><span class="underline">Программа тура</span></a>
+        </div>
+    </div>
+</section>
+            <section class="offer" id="offer">
+    <div class="offer__container container">
+        <div class="offer__left">
+            <div class="offer__subtitle subtitle">наше предложение</div>
+            <h2 class="offer__title title">Лучшие программы для тебя</h2>
+            <p>Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты. Запятых напоивший пор снова обеспечивает жизни домах города. Переписывается рыбного напоивший точках текстов необходимыми путь, большой своего себя свой его.</p>
+            <ul class="offer__advantage-list">
+                <li class="offer__advantage-item">
+                    <img class="offer__advantage-image" src="img/icons/offer-01.svg" alt="Опытный гид">
+                    <h3 class="offer__advantage-title">Опытный гид</h3>
+                    <p>Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                </li>
+                <li class="offer__advantage-item">
+                    <img class="offer__advantage-image" src="img/icons/offer-02.svg" alt="Безопасный поход">
+                    <h3 class="offer__advantage-title">Безопасный поход</h3>
+                    <p>Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga rerum itaque numquam porro fugiat expedita, impedit modi, velit nostrum distinctio quia aperiam recusandae, perspiciatis atque quaerat culpa? Cumque, optio ratione?</p>
+                </li>
+                <li class="offer__advantage-item">
+                    <img class="offer__advantage-image" src="img/icons/offer-03.svg" alt="Лояльные цены">
+                    <h3 class="offer__advantage-title">Лояльные цены</h3>
+                    <p>Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                </li>
+            </ul>
+            <a href="#" class="offer__btn btn"><span class="underline">Стоимость программ</span></a>
+        </div>
+        <div class="offer__right">
+            <div class="offer__image-block">
+                <picture class="offer__image">
+                    <source srcset="img/offer/image-01.avif" type="image/avif">
+                    <source srcset="img/offer/image-01.webp" type="image/webp">
+                    <img src="img/offer/image-01.png" loading="lazy" alt="image01">
+                </picture>
+            </div>
+            <div class="offer__image-block">
+                <picture class="offer__image">
+                    <source srcset="img/offer/image-02.avif" type="image/avif">
+                    <source srcset="img/offer/image-02.webp" type="image/webp">
+                    <img src="img/offer/image-02.png" loading="lazy" alt="image02">
+                </picture>
+            </div>
+            <div class="offer__image-block">
+                <picture class="offer__image">
+                    <source srcset="img/offer/image-03.avif" type="image/avif">
+                    <source srcset="img/offer/image-03.webp" type="image/webp">
+                    <img src="img/offer/image-03.png" loading="lazy" alt="image03">
+                </picture>
+            </div>
+            <div class="offer__image-block">
+                <picture class="offer__image">
+                    <source srcset="img/offer/image-04.avif" type="image/avif">
+                    <source srcset="img/offer/image-04.webp" type="image/webp">
+                    <img src="img/offer/image-04.png" loading="lazy" alt="image04">
+                </picture>
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="tour" id="tour">
+    <div class="tour__container container">
+        <div class="tour__subtitle subtitle">по версии отдыхающих</div>
+        <h2 class="tour__title title">Популярные направления</h2>
+    </div>
+    <div class="tour__swiper swiper">
+        <div class="tour__swiper-wrapper swiper-wrapper">
+            <div class="tour__swiper-slide swiper-slide">
+                <div class="card">
+                    <div class="card__viewport">
+                        <picture class="card__bg">
+                            <source srcset="img/tour/tour-01.avif" type="image/avif">
+                            <source srcset="img/tour/tour-01.webp" type="image/webp">
+                            <img src="img/tour/tour-01.jpg" alt="lake">
+                        </picture>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__inner">
+                            <h3 class="card__title">Озеро возле гор</h3>
+                            <div class="card__subtitle">романтическое приключение</div>
+                            <div class="card__price">480 $</div>
+                        </div>
+                        <div class="card__desc">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aperiam totam necessitatibus veritatis dolores natus doloremque! Quisquam similique, recusandae consequatur, delectus reprehenderit maxime iste distinctio atque est, nesciunt architecto impedit!</p>
+                        </div>
+                        <a href="#" class="card__btn btn"><span class="underline">Программа тура</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tour__swiper-slide swiper-slide">
+                <div class="card">
+                    <div class="card__viewport">
+                        <picture class="card__bg">
+                            <source srcset="img/tour/tour-02.avif" type="image/avif">
+                            <source srcset="img/tour/tour-02.webp" type="image/webp">
+                            <img src="img/tour/tour-02.jpg" alt="mountain">
+                        </picture>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__inner">
+                            <h3 class="card__title">Ночь в горах</h3>
+                            <div class="card__subtitle">в компании друзей</div>
+                            <div class="card__price">500 $</div>
+                        </div>
+                        <div class="card__desc">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum error laboriosam officiis, nostrum vero totam culpa esse natus accusantium earum expedita eligendi obcaecati quo magnam at deleniti laborum, in ad.
+                            Aliquam consectetur ab quasi repellendus natus sapiente sint quidem amet quaerat? Porro delectus eligendi quaerat perspiciatis commodi nisi, natus laboriosam ipsam enim sint, fugit provident non eum! Qui, accusantium cum!</p>
+                        </div>
+                        <a href="#" class="card__btn btn"><span class="underline">Программа тура</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tour__swiper-slide swiper-slide">
+                <div class="card">
+                    <div class="card__viewport">
+                        <picture class="card__bg">
+                            <source srcset="img/tour/tour-03.avif" type="image/avif">
+                            <source srcset="img/tour/tour-03.webp" type="image/webp">
+                            <img src="img/tour/tour-03.jpg" alt="mountain">
+                        </picture>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__inner">
+                            <h3 class="card__title">Йога в горах</h3>
+                            <div class="card__subtitle">для тех, кто забоится о себе</div>
+                            <div class="card__price">480 $</div>
+                        </div>
+                        <div class="card__desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, cum rerum perspiciatis minima cumque maxime hic aliquid debitis dicta, porro id et aperiam laboriosam reprehenderit natus ipsa, dolores magnam? Voluptates.</p>
+                        </div>
+                        <a href="#" class="card__btn btn"><span class="underline">Программа тура</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="tour__btn btn"><span class="underline">Рейтинг направлений</span></a>
+</section>
+            <section class="blog" id="blog">
+    <div class="blog__container container">
+        <div class="blog__subtitle subtitle">делимся впечатлениями</div>
+        <h2 class="blog__title title">Блог о путешествиях</h2>
+    </div>
+    <div class="blog__swiper swiper">
+        <div class="blog__swiper-wrapper swiper-wrapper">
+            <div class="blog__swiper-slide swiper-slide">
+                <article class="blog__article article">
+                    <div class="article__img-wrap">
+                        <a href="#" tabindex="-1" class="article__link">
+                            <picture class="article__image">
+                                <source srcset="img/blog/blog-01.avif" type="image/avif">
+                                <source srcset="img/blog/blog-01.webp" type="image/webp">
+                                <img src="img/blog/blog-01.jpg" alt="Италия">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="article__content">
+                        <a href="#" class="article__link article__link--focus">
+                            <h3 class="article__title"><span class="underline">Красивая Италя, какая она в реальности?</span></h3>
+                        </a>
+                        <div class="article__text">
+                            <p>Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                        </div>
+                        <div class="article__bottom">
+                            <time class="article__date" datetime="2023-04-21">01/04/2023</time>
+                            <a href="#" class="article__btn-link" tabindex="-1"><span class="underline">читать статью</span></a>                         
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="blog__swiper-slide swiper-slide">
+                <article class="blog__article article">
+                    <div class="article__img-wrap">
+                        <a href="#" tabindex="-1" class="article__link">
+                            <picture class="article__image">
+                                <source srcset="img/blog/blog-02.avif" type="image/avif">
+                                <source srcset="img/blog/blog-02.webp" type="image/webp">
+                                <img src="img/blog/blog-02.jpg" alt="Италия">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="article__content">
+                        <a href="#" class="article__link article__link--focus">
+                            <h3 class="article__title"><span class="underline">Долой сомнения! Весь мир открыт для вас!</span></h3>
+                        </a>
+                        <div class="article__text">
+                            <p>Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации ... независимые способы реализации соответствующих условий активизации ...Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации ... независимые способы реализации соответствующих условий активизации ...</p>
+                        </div>
+                        <div class="article__bottom">
+                            <time class="article__date" datetime="2023-05-15">15/05/2023</time>
+                            <a href="#" class="article__btn-link" tabindex="-1"><span class="underline">читать статью</span></a>                         
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="blog__swiper-slide swiper-slide">
+                <article class="blog__article article">
+                    <div class="article__img-wrap">
+                        <a href="#" tabindex="-1" class="article__link">
+                            <picture class="article__image">
+                                <source srcset="img/blog/blog-03.avif" type="image/avif">
+                                <source srcset="img/blog/blog-03.webp" type="image/webp">
+                                <img src="img/blog/blog-03.jpg" alt="Италия">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="article__content">
+                        <a href="#" class="article__link article__link--focus">
+                            <h3 class="article__title"><span class="underline">Как подготовиться к путешествию в одиночку?</span></h3>
+                        </a>
+                        <div class="article__text">
+                            <p>Для современного мира базовый вектор развития предполагает</p>
+                        </div>
+                        <div class="article__bottom">
+                            <time class="article__date" datetime="2023-06-27">27/06/2023</time>
+                            <a href="#" class="article__btn-link" tabindex="-1"><span class="underline">читать статью</span></a>                         
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="blog__swiper-slide swiper-slide">
+                <article class="blog__article article">
+                    <div class="article__img-wrap">
+                        <a href="#" tabindex="-1" class="article__link">
+                            <picture class="article__image">
+                                <source srcset="img/blog/blog-04.avif" type="image/avif">
+                                <source srcset="img/blog/blog-04.webp" type="image/webp">
+                                <img src="img/blog/blog-04.jpg" alt="Италия">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="article__content">
+                        <a href="#" class="article__link article__link--focus">
+                            <h3 class="article__title"><span class="underline">Индия ... летим?</span></h3>
+                        </a>
+                        <div class="article__text">
+                            <p>Для современного мира базовый.</p>
+                        </div>
+                        <div class="article__bottom">
+                            <time class="article__date" datetime="2023-08-03">03/08/2023</time>
+                            <a href="#" class="article__btn-link" tabindex="-1"><span class="underline">читать статью</span></a>                         
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="blog__btn btn"><span class="underline">Другие материалы</span></a>
+</section>
+            <section class="gallery" id="gallery">
+    <div class="gallery__subtitle subtitle">фото-отчет</div>
+    <h2 class="gallery__title title">Делимся впечатлениями</h2>
+    <div class="gallery__swiper swiper">
+        <div class="gallery__swiper-wrapper swiper-wrapper">
+            <div class="gallery__swiper-slide swiper-slide">
+                <picture>
+                    <source srcset="img/gallery/image-01.avif" type="image/avif">
+                    <source srcset="img/gallery/image-01.webp" type="image/webp">
+                    <img src="img/gallery/image-01.jpg" alt="gallery-picture" class="gallery__img">
+                </picture>
+            </div>
+            <div class="gallery__swiper-slide swiper-slide">
+                <picture>
+                    <source srcset="img/gallery/image-02.avif" type="image/avif">
+                    <source srcset="img/gallery/image-02.webp" type="image/webp">
+                    <img src="img/gallery/image-02.jpg" alt="gallery-picture" class="gallery__img">
+                </picture>
+            </div>
+            <div class="gallery__swiper-slide swiper-slide">
+                <picture>
+                    <source srcset="img/gallery/image-05.avif" type="image/avif">
+                    <source srcset="img/gallery/image-05.webp" type="image/webp">
+                    <img src="img/gallery/image-05.jpg" alt="gallery-picture" class="gallery__img">
+                </picture>
+            </div>
+            <div class="gallery__swiper-slide swiper-slide">
+                <picture>
+                    <source srcset="img/gallery/image-03.avif" type="image/avif">
+                    <source srcset="img/gallery/image-03.webp" type="image/webp">
+                    <img src="img/gallery/image-03.jpg" alt="gallery-picture" class="gallery__img">
+                </picture>
+            </div>
+            <div class="gallery__swiper-slide swiper-slide">
+                <picture>
+                    <source srcset="img/gallery/image-04.avif" type="image/avif">
+                    <source srcset="img/gallery/image-04.webp" type="image/webp">
+                    <img src="img/gallery/image-04.jpg" alt="gallery-picture" class="gallery__img">
+                </picture>
+            </div>
+            <div class="gallery__swiper-slide swiper-slide">
+                <picture>
+                    <source srcset="img/gallery/image-06.avif" type="image/avif">
+                    <source srcset="img/gallery/image-06.webp" type="image/webp">
+                    <img src="img/gallery/image-06.jpg" alt="gallery-picture" class="gallery__img">
+                </picture>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="gallery__btn btn"><span class="underline">Наш pinterest</span></a>
+</section>
+            <section class="getnews" id="getnews">
+    <div class="getnews__container container">
+        <div class="getnews__inner">
+            <div class="getnews__left">
+                <div class="getnews__subtitle subtitle">актуально</div>
+                <h2 class="getnews__title title">Получайте полезные рассылки о путешествиях</h2>
+            </div>
+            <div class="getnews__right">
+                <form class="getnews__form">
+                    <label>
+                        <div class="getnews__form-subtext">Введите e-mail адрес</div>
+                        <input class="getnews__form-input" type="email" name="userEmail" placeholder="name@domain.com">
+                    </label>
+                    <button class="getnews__form-btn btn btn--small" type="submit"><span class="underline">Подписаться на новости</span></button>
+                    <p> подписываясь на новости, вы автоматически соглашаетесь с <a class="getnews__form-agreeLink" href="#!">условиями обработки персональных данных</a> и <a class="getnews__form-agreeLink" href="#!">правилами рекламных рассылок</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+        </main>
+         <footer id="footer" class="footer">
+    <div class="footer__content">
+        <div class="footer__content-container container">
+            <div class="footer__column footer__column--first">
+                <h3 class="footer__column-title">Компания «РумТибет»</h3>
+                <div class="footer__text">
+                    <p>Далеко-далеко за словесными горами в стране гласных.</p>
+                    <p>Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney.</p>
+                    <p>Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты. Проектах буквоград даже предложения возвращайся!</p>
+                </div>
+                <div class="footer__contact-wrap">
+                    <a href="mailto:info@domain.com" class="footer__contact-link"><span class="underline">info@domain.com</span></a>
+                    <a href="tel:+71234567890" class="footer__contact-link"><span class="underline">+7 (123) 456-78-90</span></a>
+                </div>
+                <ul class="footer__social-list">
+                    <li class="footer__social-item"><a href="#" class="footer__social-link" aria-label="телеграм">
+                        <svg width="32" height="32" fill="none"><path d="M16 2.667C8.64 2.667 2.667 8.64 2.667 16S8.64 29.333 16 29.333 29.333 23.36 29.333 16 23.36 2.667 16 2.667zm6.187 9.066c-.2 2.107-1.067 7.227-1.507 9.587-.187 1-.56 1.333-.907 1.373-.773.067-1.36-.506-2.106-1-1.174-.773-1.84-1.253-2.974-2-1.32-.866-.466-1.346.294-2.12.2-.2 3.613-3.306 3.68-3.586a.267.267 0 00-.067-.24c-.08-.067-.187-.04-.28-.027-.12.027-1.987 1.267-5.627 3.72-.533.36-1.013.547-1.44.533-.48-.013-1.386-.266-2.066-.493-.84-.267-1.494-.413-1.44-.88.026-.24.36-.48.986-.733 3.894-1.694 6.48-2.814 7.774-3.347 3.706-1.547 4.466-1.813 4.973-1.813.107 0 .36.026.52.16a.53.53 0 01.187.36c-.014.08.013.32 0 .506z"/></svg>
+                    </a></li>
+                    <li class="footer__social-item"><a href="#" class="footer__social-link" aria-label="вк">
+                        <svg width="32" height="32" fill="none"><path d="M16.36 3C8.981 3 3 8.98 3 16.36c0 7.378 5.981 13.36 13.36 13.36s13.36-5.982 13.36-13.36C29.72 8.98 23.739 3 16.36 3zm5.138 15.073s1.182 1.166 1.472 1.707c.009.012.013.023.016.028.118.2.146.354.087.47-.097.191-.431.286-.545.294H20.44c-.144 0-.448-.037-.815-.29-.283-.198-.561-.522-.832-.838-.405-.47-.756-.877-1.11-.877a.427.427 0 00-.132.02c-.267.087-.61.468-.61 1.484 0 .318-.25.5-.426.5h-.957c-.325 0-2.022-.114-3.525-1.7-1.84-1.94-3.496-5.834-3.51-5.87-.104-.253.112-.388.347-.388h2.108c.281 0 .373.172.437.323.076.177.351.88.803 1.67.734 1.289 1.183 1.812 1.544 1.812a.418.418 0 00.193-.05c.47-.261.383-1.938.362-2.286 0-.066-.001-.75-.242-1.079-.173-.238-.466-.328-.644-.362.072-.1.167-.18.277-.235.322-.161.904-.185 1.482-.185h.321c.626.008.788.049 1.015.106.459.11.469.406.428 1.42-.012.289-.025.614-.025.998 0 .084-.004.173-.004.268-.014.516-.03 1.102.334 1.343a.3.3 0 00.159.045c.126 0 .508 0 1.54-1.771.319-.57.595-1.163.828-1.773.021-.036.082-.148.155-.19a.37.37 0 01.172-.041h2.479c.27 0 .455.04.49.145.061.165-.011.67-1.143 2.203l-.505.666c-1.026 1.345-1.026 1.413.064 2.433z"/></svg>
+                    </a></li>
+                    <li class="footer__social-item"><a href="#" class="footer__social-link" aria-label="пинтрест">
+                        <svg width="32" height="32" fill="none"><path d="M12.053 28.72c1.28.387 2.574.613 3.947.613A13.333 13.333 0 102.667 16c0 5.667 3.56 10.533 8.586 12.453-.12-1.04-.24-2.76 0-3.946l1.534-6.587s-.387-.773-.387-2c0-1.84 1.147-3.213 2.453-3.213 1.147 0 1.68.84 1.68 1.92 0 1.146-.76 2.786-1.146 4.36-.227 1.306.693 2.453 2.026 2.453 2.374 0 4.214-2.533 4.214-6.107 0-3.2-2.294-5.386-5.587-5.386-3.76 0-5.973 2.8-5.973 5.746 0 1.147.373 2.307.986 3.067.12.08.12.187.08.387l-.386 1.453c0 .227-.147.307-.374.147C8.667 20 7.68 17.573 7.68 15.613c0-4.213 2.987-8.04 8.747-8.04 4.586 0 8.16 3.294 8.16 7.667 0 4.587-2.84 8.267-6.907 8.267-1.293 0-2.56-.694-3.013-1.507l-.894 3.16c-.306 1.147-1.146 2.68-1.72 3.6v-.04z"/></svg>
+                    </a></li>
+                    <li class="footer__social-item"><a href="#" class="footer__social-link" aria-label="скайп">
+                        <svg width="32" height="32" fill="none"><path d="M24 8c2.76 2.72 3.8 6.52 3.147 10.067.546.96.853 2.08.853 3.266A6.667 6.667 0 0121.333 28a6.59 6.59 0 01-3.266-.853C14.52 27.8 10.72 26.76 8 24c-2.76-2.72-3.8-6.52-3.147-10.067A6.59 6.59 0 014 10.667 6.667 6.667 0 0110.667 4a6.59 6.59 0 013.266.853C17.48 4.2 21.28 5.24 24 8zm-7.947 14.88c3.827 0 5.734-1.84 5.734-4.32 0-1.587-.747-3.28-3.64-3.933l-2.654-.587c-1.013-.227-2.16-.533-2.16-1.48 0-.96.8-1.627 2.267-1.627 2.973 0 2.693 2.04 4.173 2.04.774 0 1.44-.453 1.44-1.24 0-1.826-2.92-3.2-5.4-3.2-2.68 0-5.546 1.147-5.546 4.187 0 1.467.52 3.027 3.4 3.747l3.586.906c1.08.267 1.347.867 1.347 1.427 0 .907-.907 1.8-2.547 1.8-3.213 0-2.773-2.467-4.493-2.467-.773 0-1.333.534-1.333 1.294 0 1.48 1.773 3.453 5.826 3.453z"/></svg>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3 class="footer__column-title">Наши услуги</h3>
+                <ul class="footer__source-list">
+                    <li class="footer__source-item">
+                        <a href="#" class="footer__source-link">
+                            <svg viewBox="0 0 6 10" width="6" height="10"><use xlink:href="#smallArrow" /></svg>
+                            <span class="underline">Прогулки в горы летом</span>
+                        </a>
+                    </li>
+                    <li class="footer__source-item">
+                        <a href="#" class="footer__source-link">
+                            <svg viewBox="0 0 6 10" width="6" height="10"><use xlink:href="#smallArrow" /></svg>
+                            <span class="underline">Как собрать в долгий поход?</span>
+                        </a>
+                    </li>
+                    <li class="footer__source-item">
+                        <a href="#" class="footer__source-link">
+                            <svg viewBox="0 0 6 10" width="6" height="10"><use xlink:href="#smallArrow" /></svg>
+                            <span class="underline">Зимние походы в горы</span>
+                        </a>
+                    </li>
+                    <li class="footer__source-item">
+                        <a href="#" class="footer__source-link">
+                            <svg viewBox="0 0 6 10" width="6" height="10"><use xlink:href="#smallArrow" /></svg>
+                            <span class="underline">Жизненно важные предметы для похода</span>
+                        </a>
+                    </li>
+                    <li class="footer__source-item">
+                        <a href="#" class="footer__source-link">
+                            <svg viewBox="0 0 6 10" width="6" height="10"><use xlink:href="#smallArrow" /></svg>
+                            <span class="underline">Посещение храмов в горах</span>
+                        </a>
+                    </li>
+                    <li class="footer__source-item">
+                        <a href="#" class="footer__source-link">
+                            <svg viewBox="0 0 6 10" width="6" height="10"><use xlink:href="#smallArrow" /></svg>
+                            <span class="underline">Экстремальные виды туризма</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3 class="footer__column-title">Важно для путешествий</h3>
+                <ul class="footer__source-list">
+                    <li class="footer__source-item">
+                        <a href="#" class="footer__source-link">
+                            <svg viewBox="0 0 6 10" width="6" height="10"><use xlink:href="#smallArrow" /></svg>
+                            <span class="underline">Медицинская страховка, гарантии безопасности</span>
+                        </a>
+                    </li>
+                    <li class="footer__source-item">
+                        <a href="#" class="footer__source-link">
+                            <svg viewBox="0 0 6 10" width="6" height="10"><use xlink:href="#smallArrow" /></svg>
+                            <span class="underline">Походы в джунглях Амазонии</span>
+                        </a>
+                    </li>
+                    <li class="footer__source-item">
+                        <a href="#" class="footer__source-link">
+                            <svg viewBox="0 0 6 10" width="6" height="10"><use xlink:href="#smallArrow" /></svg>
+                            <span class="underline">Если вы врач - загляните сюда</span>
+                        </a>
+                    </li>
+                    <li class="footer__source-item">
+                        <a href="#" class="footer__source-link">
+                            <svg viewBox="0 0 6 10" width="6" height="10"><use xlink:href="#smallArrow" /></svg>
+                            <span class="underline">Поездка в Африку</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="footer__bottom-container container">
+            <span class="footer__copy">ИП Константинопольский К.К., 2023</span>
+            <a href="#" class="footer__bottom-link">Политика обработки персональных данных</a>
+        </div>
+    </div>
+</footer>
+    </div>
+    <div class="svg-defs">
+        <svg>
+            <defs>
+                <symbol id="smallArrow" width="6" height="10" viewBox="0 0 6 10">
+                    <path d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700889 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z"/>
+                </symbol>
+            </defs>
+        </svg>
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+</html>
